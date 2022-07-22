@@ -31,11 +31,11 @@ public class PlayerMovement : MonoBehaviour
         vertical = 0;
     } 
 
-    if(horizontal >= 0)
+    if(horizontal > 0)
     {
         GetComponent<SpriteRenderer>().flipX = false;
     }
-    else
+    else if (horizontal < 0)
     {
         GetComponent<SpriteRenderer>().flipX = true;
     }
