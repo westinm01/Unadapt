@@ -42,4 +42,8 @@ public class PlayerMovement : MonoBehaviour
 
     body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
+
+    private void OnTriggerEnter2D(Collider2D collider) { //test code
+        Debug.Log("Trigger");
+    }
 }
