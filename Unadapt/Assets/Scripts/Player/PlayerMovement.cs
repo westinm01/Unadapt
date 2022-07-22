@@ -31,6 +31,15 @@ public class PlayerMovement : MonoBehaviour
         vertical = 0;
     } 
 
+    if(horizontal >= 0)
+    {
+        GetComponent<SpriteRenderer>().flipX = false;
+    }
+    else
+    {
+        GetComponent<SpriteRenderer>().flipX = true;
+    }
+
     body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 }
