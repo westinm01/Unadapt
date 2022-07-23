@@ -25,7 +25,12 @@ public class ColorDetector : MonoBehaviour
             Tilemap tm = child.gameObject.GetComponent<Tilemap>();
             if(tm.GetTile(lPos) != null)
             {
-                isMatching = tm.color == player.GetComponent<SpriteRenderer>().color;
+                Color32 x = player.GetComponent<SpriteRenderer>().color;
+                Color32 y = tm.color;
+                //isMatching = tm.color.r - x.r < 0.004 && tm.color.g - x.g < 0.004 && tm.color.b - x.b < 0.004;
+                //isMatching = tm.color == player.GetComponent<SpriteRenderer>().color;
+                isMatching = x.r == y.r && x.g == y.g && x.b == y.b;
+                Debug.Log(player.GetComponent<SpriteRenderer>().color.r + " " + tm.color.r + ", " + player.GetComponent<SpriteRenderer>().color.g + " " + tm.color.g + ", " + player.GetComponent<SpriteRenderer>().color.b + " " + tm.color.b);
             }
         }
     }

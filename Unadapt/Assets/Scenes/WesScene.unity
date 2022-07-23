@@ -518,6 +518,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3624236017835592593, guid: 46c7e6592e64a91439148a8f5a338181, type: 3}
+      propertyPath: color1.b
+      value: 0.8509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 3624236017835592593, guid: 46c7e6592e64a91439148a8f5a338181, type: 3}
+      propertyPath: color1.g
+      value: 0.7019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 3624236017835592593, guid: 46c7e6592e64a91439148a8f5a338181, type: 3}
+      propertyPath: color1.r
+      value: 0.9725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 3624236017835592593, guid: 46c7e6592e64a91439148a8f5a338181, type: 3}
+      propertyPath: color4.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3624236017835592593, guid: 46c7e6592e64a91439148a8f5a338181, type: 3}
+      propertyPath: color4.r
+      value: 0.79607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 3624236017835592593, guid: 46c7e6592e64a91439148a8f5a338181, type: 3}
+      propertyPath: color6.g
+      value: 0.72156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3624236017835592593, guid: 46c7e6592e64a91439148a8f5a338181, type: 3}
+      propertyPath: color6.r
+      value: 0.78039217
+      objectReference: {fileID: 0}
     - target: {fileID: 3624236017835592595, guid: 46c7e6592e64a91439148a8f5a338181, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3046,6 +3074,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 123938600958091643, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 123938600958091643, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
+      propertyPath: m_Color.g
+      value: 0.70127267
+      objectReference: {fileID: 0}
+    - target: {fileID: 123938600958091643, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 123938600958091643, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
       propertyPath: m_Tiles.Array.size
       value: 16
       objectReference: {fileID: 0}
@@ -3618,6 +3658,18 @@ PrefabInstance:
       value: 65535
       objectReference: {fileID: 0}
     - target: {fileID: 123938601972228102, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 123938601972228102, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7216981
+      objectReference: {fileID: 0}
+    - target: {fileID: 123938601972228102, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
+      propertyPath: m_Color.r
+      value: 0.78172404
+      objectReference: {fileID: 0}
+    - target: {fileID: 123938601972228102, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
       propertyPath: m_Tiles.Array.size
       value: 14
       objectReference: {fileID: 0}
@@ -4132,6 +4184,18 @@ PrefabInstance:
     - target: {fileID: 123938601972228102, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
       propertyPath: m_Tiles.Array.data[13].second.m_TileObjectToInstantiateIndex
       value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 123938602079117113, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
+      propertyPath: m_Color.b
+      value: 0.759434
+      objectReference: {fileID: 0}
+    - target: {fileID: 123938602079117113, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 123938602079117113, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7956837
       objectReference: {fileID: 0}
     - target: {fileID: 123938602079117113, guid: 68674a6cbe655814d9c14f58c0d4c2df, type: 3}
       propertyPath: m_Tiles.Array.size
