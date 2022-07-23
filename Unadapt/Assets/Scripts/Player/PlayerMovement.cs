@@ -10,10 +10,12 @@ public class PlayerMovement : MonoBehaviour
     float vertical;
 
     public float runSpeed = 20.0f;
+    private Animator anim;
 
     void Start ()
     {
     body = GetComponent<Rigidbody2D>();
+    anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -31,13 +33,13 @@ public class PlayerMovement : MonoBehaviour
         vertical = 0;
     } 
 
-    if(horizontal > 0)
+    if(horizontal != 0)
     {
-        GetComponent<SpriteRenderer>().flipX = false;
+        GetComponent<SpriteRenderer>().flipX = horizontal < 0;
+        anim.SetBool("isWalking", true);
     }
-    else if (horizontal < 0)
-    {
-        GetComponent<SpriteRenderer>().flipX = true;
+    else{
+        anim.SetBool("isWalking", false);
     }
 
     body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
