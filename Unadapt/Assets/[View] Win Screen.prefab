@@ -513,7 +513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Congratz! Level complete!
+  m_text: Stage 1/5 Cleared!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ebdd72b6cf41dd344825ba44f3ab7749, type: 2}
   m_sharedMaterial: {fileID: 649725216859344560, guid: ebdd72b6cf41dd344825ba44f3ab7749, type: 2}
@@ -540,8 +540,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 150
+  m_fontSizeBase: 150
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

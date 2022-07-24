@@ -422,6 +422,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1640457611511482406, guid: ec4cb07cd9a06bf44b3263fd83c11bdf, type: 3}
+      propertyPath: m_text
+      value: Stage 3/5 Cleared!
+      objectReference: {fileID: 0}
     - target: {fileID: 1640457611521431534, guid: ec4cb07cd9a06bf44b3263fd83c11bdf, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5219,7 +5223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044690391088803408, guid: ac4c5feb02d52814693b40eb94100b11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.53
+      value: 8.4
       objectReference: {fileID: 0}
     - target: {fileID: 1044690391088803408, guid: ac4c5feb02d52814693b40eb94100b11, type: 3}
       propertyPath: m_LocalPosition.y
