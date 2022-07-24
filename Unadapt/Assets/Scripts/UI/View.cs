@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Animator), typeof(CanvasGroup))]
-public class View<T> : MonoBehaviourSingleton<T>
+public class View<T> : MonoBehaviour
 	where T : View<T>
 {
 	private Animator _animator;
@@ -39,10 +39,8 @@ public class View<T> : MonoBehaviourSingleton<T>
 	[SerializeField] private bool _initiallyActive = true;
 	public bool _InitiallyActive => this._initiallyActive;
 
-	protected override void Awake()
+	protected virtual void Awake()
 	{
-		base.Awake();
-
 		this._animator = this.GetComponent<Animator>();
 		this._canvasGroup = this.GetComponent<CanvasGroup>();
 

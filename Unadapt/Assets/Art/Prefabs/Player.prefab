@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 528390160}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,6 +226,7 @@ MonoBehaviour:
   color4: {r: 0.79607844, g: 1, b: 0.7607843, a: 1}
   color5: {r: 0.8, g: 0.9098039, b: 1, a: 1}
   color6: {r: 0.78039217, g: 0.72156864, b: 1, a: 1}
+  _colorChangeAudioClip: {fileID: 8300000, guid: 068e66df8c9e92547a5a6d3cd4e07318, type: 3}
 --- !u!61 &3624236017835592592
 BoxCollider2D:
   m_ObjectHideFlags: 0

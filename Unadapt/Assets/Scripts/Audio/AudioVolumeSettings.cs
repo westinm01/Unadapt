@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "[Audio Volume Settings]", menuName = "[Audio Volume Settings]")]
 public class AudioVolumeSettings : ScriptableObject
 {
-	public event System.Action<float> OnVolumeChange;
+	public System.Action<float> OnVolumeChange;
 
 	[Range(0.0f, 1.0f)]
 	[SerializeField] private float _volume;

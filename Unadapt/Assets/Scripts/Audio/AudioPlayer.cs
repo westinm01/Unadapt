@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioPlayer : MonoBehaviourSingleton<AudioPlayer>
 {
@@ -60,5 +61,13 @@ public class AudioPlayer : MonoBehaviourSingleton<AudioPlayer>
 		{
 			this._type_data_relations.Add(key: (int)this._data[a]._Type, value: this._data[a]);
 		}
+
+		SceneManager.sceneLoaded += (scene, mode) =>
+		{
+			for (int a = 0; a < this._data.Length; a++)
+			{
+				this._data[a]._AudioVolumeSettings.OnVolumeChange = delegate { };
+			}
+		};
 	}
 }

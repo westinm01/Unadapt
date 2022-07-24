@@ -10,7 +10,11 @@ public class MonoBehaviourSingleton<T> : MonoBehaviour
 	protected virtual void Awake()
 	{
 		if (Instance == null)
+		{
 			Instance = this as T;
+
+			Object.DontDestroyOnLoad(Instance);
+		}
 		else if (Instance != this as T)
 			Object.Destroy(this);
 	}
