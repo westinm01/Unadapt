@@ -27,6 +27,7 @@ public class PredatorMovement : MonoBehaviour
     {
         if(detector.canAttack){
             nextPos = detector.colorDetector.player.transform.position;
+            nextPos.z = -2; // so that the bird is on top of the player at all times.
             speed = attackSpeed;
         }
         else{
@@ -50,6 +51,9 @@ public class PredatorMovement : MonoBehaviour
             nextPos = positions[positionsIndex].position;
             
         }
+        
+        GetComponent<SpriteRenderer>().flipX = nextPos.x > transform.position.x;
+        
         transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
     }
 }
