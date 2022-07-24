@@ -8,12 +8,17 @@ public class View<T> : MonoBehaviourSingleton<T>
 	where T : View<T>
 {
 	private Animator _animator;
+	private CanvasGroup _canvasGroup;
+
+	public bool Active_ { get; private set; }
 
 	[SerializeField] private UnityEvent _onOpen;
 	public UnityEvent _OnOpen => this._onOpen;
 
-	public void Open()
+	public virtual void Open()
 	{
+		this.Active_ = true;
+
 		this._animator.SetTrigger(nameof(this.Open));
 
 		this._onOpen.Invoke();
@@ -22,8 +27,10 @@ public class View<T> : MonoBehaviourSingleton<T>
 	[SerializeField] private UnityEvent _onClose;
 	public UnityEvent _OnClose => this._onClose;
 
-	public void Close()
+	public virtual void Close()
 	{
+		this.Active_ = false;
+
 		this._animator.SetTrigger(nameof(this.Close));
 
 		this._onClose.Invoke();
@@ -37,9 +44,14 @@ public class View<T> : MonoBehaviourSingleton<T>
 		base.Awake();
 
 		this._animator = this.GetComponent<Animator>();
+		this._canvasGroup = this.GetComponent<CanvasGroup>();
+
+		this._canvasGroup.alpha = 0.0f;
 
 		if (!this._initiallyActive)
 			this.Close();
+		else
+			this.Open();
 	}
 }
 
