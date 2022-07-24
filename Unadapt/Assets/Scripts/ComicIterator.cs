@@ -19,6 +19,7 @@ public class ComicIterator : MonoBehaviour
 
     public void ShowNextPanel()
     {
+        
         if(index < comicPanels.Count)
         {
             
@@ -31,6 +32,7 @@ public class ComicIterator : MonoBehaviour
         }
         else{
             //Reached end of comic, load new scene
+            
             sc.LoadScene(nextSceneIndex);
         }
         
