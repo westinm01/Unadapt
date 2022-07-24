@@ -288,7 +288,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2805,6 +2804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Audio Clip Playback]'
       objectReference: {fileID: 0}
+    - target: {fileID: 1220449260053364119, guid: cb3f1160428fd8043bcde69b86502382, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cab24e24221f3af498a52e15e22b7a4c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb3f1160428fd8043bcde69b86502382, type: 3}
 --- !u!1001 &1519068777557506581
