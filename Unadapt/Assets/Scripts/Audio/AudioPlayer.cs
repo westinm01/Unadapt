@@ -28,7 +28,7 @@ public class AudioPlayer : MonoBehaviourSingleton<AudioPlayer>
 
 	private Dictionary<int, Data> _type_data_relations;
 
-	public void Play(AudioClip audioClip, Type type, bool loop = false)
+	public AudioSource Play(AudioClip audioClip, Type type, bool loop = false)
 	{
 		Data data = this._type_data_relations[(int)type];
 
@@ -46,6 +46,8 @@ public class AudioPlayer : MonoBehaviourSingleton<AudioPlayer>
 
 		if (!loop)
 			Object.Destroy(audioSource, audioClip.length);
+
+		return audioSource;
 	}
 
 	[SerializeField] private Data[] _data;

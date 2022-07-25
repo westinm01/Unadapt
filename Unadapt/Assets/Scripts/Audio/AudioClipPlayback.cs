@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,12 +14,18 @@ public class AudioClipPlayback : MonoBehaviour
 	[SerializeField] private bool _loop;
 	public bool _Loop => this._loop;
 
+	[SerializeField] private bool _multiScene;
+	public bool _MultiScene => this._multiScene;
+
 	private void Start()
 	{
-		AudioPlayer.Instance.Play(
+		AudioSource audioSource = AudioPlayer.Instance.Play(
 			audioClip: this._audioClip,
 			type: this._type,
 			loop: this._loop
 		);
+
+		if (this._multiScene)
+			audioSource.gameObject.AddComponent<AudioMultiSceneLoop>();
 	}
 }

@@ -53,11 +53,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1220449260053364117, guid: cb3f1160428fd8043bcde69b86502382, type: 3}
       propertyPath: m_Name
-      value: '[Audio Clip Playback]'
+      value: '[Audio Clip Playback] JUNGLEWAVE Variant'
       objectReference: {fileID: 0}
     - target: {fileID: 1220449260053364119, guid: cb3f1160428fd8043bcde69b86502382, type: 3}
       propertyPath: _audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 347cc980ff6199a45bfe98c8d5a68a24, type: 3}
+    - target: {fileID: 1220449260053364119, guid: cb3f1160428fd8043bcde69b86502382, type: 3}
+      propertyPath: _multiScene
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb3f1160428fd8043bcde69b86502382, type: 3}

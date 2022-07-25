@@ -16,6 +16,6 @@ public class MonoBehaviourSingleton<T> : MonoBehaviour
 			Object.DontDestroyOnLoad(Instance);
 		}
 		else if (Instance != this as T)
-			Object.Destroy(this);
+			Object.Destroy(this.gameObject);
 	}
 }
