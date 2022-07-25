@@ -153,7 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -552,6 +551,21 @@ PrefabInstance:
     - target: {fileID: 2032527848905455878, guid: d4481dedb0a4d574f90a95d39eef1261, type: 3}
       propertyPath: m_Name
       value: '[View] Final Screen'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696021733309263057, guid: d4481dedb0a4d574f90a95d39eef1261, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -230
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171764856138409029, guid: d4481dedb0a4d574f90a95d39eef1261, type: 3}
+      propertyPath: m_text
+      value: 'Cam made it safe back home!
+
+        The next day, the wizard gave
+        back his colors, and Cam lived happily ever after!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171764856138409029, guid: d4481dedb0a4d574f90a95d39eef1261, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4481dedb0a4d574f90a95d39eef1261, type: 3}

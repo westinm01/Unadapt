@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float runSpeed = 20.0f;
     private Animator anim;
+    
 
     void Start ()
     {
@@ -27,22 +28,25 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-    if (horizontal != 0 && vertical != 0) // Check for diagonal movement and remove it
-    {
-        horizontal = 0;
-        vertical = 0;
-    } 
 
-    if(horizontal != 0)
-    {
-        GetComponent<SpriteRenderer>().flipX = horizontal < 0;
-        anim.SetBool("isWalking", true);
-    }
-    else{
-        anim.SetBool("isWalking", false);
-    }
+        if(horizontal != 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = horizontal < 0;
+            anim.SetBool("isWalking", true);
+        }
+        else{
+            anim.SetBool("isWalking", false);
+        }
 
-    body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        if (horizontal != 0 && vertical != 0) // Check for diagonal movement and slow it
+        {
+            body.velocity = new Vector2(horizontal * runSpeed * 0.7f, vertical * runSpeed * 0.7f); 
+        } 
+        else
+        {
+            body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collider) { //test code
